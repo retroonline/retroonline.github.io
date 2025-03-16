@@ -35,6 +35,9 @@ div.txt{
 div.small{
   font-size: 0.7em;
 }
+div.green{
+  color: rgb(108, 201, 71);
+}
 div.tablebg{
   background: rgb(50, 50, 50);
 }
@@ -48,11 +51,11 @@ td{
 }
 </style>
 </head>
-<title>retro online</title>
+<title>RetroOnline</title>
 <body>
 <div class="bigcard">
   <div class="smallcard">
-      <div class="title">
+      <div class="title" id="title">
         Retro Online
       </div>
       <div class="txt">
@@ -94,9 +97,27 @@ td{
       </div>
   </div>
   <div class="smallcard">
-    <div class="txt small">
+      <div class="title">
+        About
+      </div>
+      <div class="txt">
+        This website is created by 一个六年级小学生.
+        <br>
+        <a href="https://enterbox.github.io" target="_blank">
+        <div class="green">Enterbox.github.io</div></a>
+        <a href="https://tcdmc.github.io/other" target="_blank">
+        <div class="green">What...</div></a>
+      </div>
+  </div>
+  <div class="smallcard">
+    <div class="title txt small">
       2025-5220 © Retro Online
     </div>
   </div>
-</div>
+<script>
+  var titles=["RetroOnline","etroOnlineR","troOnlineRe","roOnlineRet","oOnlineRetr","OnlineRetro","nlineRetroO","lineRetroOn","ineRetroOnl","neRetroOnli","eRetroOnlin","RetroOnline"];
+  for (let i = 0; i < 121000; i++) {
+    setTimeout(() => document.getElementById("title").innerHTML  = titles[i%11], 500 * i)
+  };
+</script>
 </body>
